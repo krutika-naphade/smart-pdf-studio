@@ -1,0 +1,187 @@
+.hero{
+
+    max-width:1400px;
+
+    margin:70px auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:80px;
+
+    padding:0 45px;
+}
+
+.hero-left{
+
+    flex:1;
+}
+
+.hero-tag{
+
+    color:#A67C52;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    margin-bottom:18px;
+}
+
+.hero h1{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:56px;
+
+    line-height:1.9;
+
+    color:#3B2F2F;
+
+    margin-bottom:25px;
+}
+
+.hero-description{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#6B625A;
+
+    max-width:600px;
+
+    margin-bottom:40px;
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:24px;
+}
+
+.primary-btn{
+
+    background:#4A3932;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+    min-width:180px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-2px);
+
+    background:#6D544A;
+}
+
+.secondary-btn{
+
+    background:white;
+
+    color:#4A3932;
+
+    border:1px solid #D9CDBF;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+.secondary-btn:hover{
+
+    background:#F6F1EA;
+}
+
+.hero-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+.hero-card{
+
+    width:460px;
+
+    height:360px;
+
+    background:white;
+
+    border-radius:22px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.pdf-preview{
+
+    width:300px;
+
+    background:#FAF7F2;
+
+    border-radius:14px;
+
+    padding:25px;
+}
+
+.pdf-header{
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+    color:#3B2F2F;
+}
+
+.line{
+
+    height:10px;
+
+    background:#DDD3C8;
+
+    border-radius:20px;
+
+    margin-bottom:16px;
+}
+
+.short{
+
+    width:60%;
+}
+
+.medium{
+
+    width:80%;
+}
