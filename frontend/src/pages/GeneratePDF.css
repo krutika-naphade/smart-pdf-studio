@@ -1,0 +1,41 @@
+.generate-page {
+    padding: 50px 80px;
+    background: #F4EFE7;
+    min-height: 100vh;
+}
+
+.generate-header {
+    margin-bottom: 40px;
+}
+
+.generate-header h1 {
+    font-size: 42px;
+    color: #3D2C27;
+    margin-bottom: 10px;
+}
+
+.generate-header p {
+    color: #6F625C;
+    font-size: 18px;
+}
+
+.workspace {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 35px;
+}
+
+.left-panel,
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+@media (max-width: 1100px) {
+
+    .workspace {
+        grid-template-columns: 1fr;
+    }
+
+}

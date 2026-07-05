@@ -1,0 +1,47 @@
+.generate-button-container{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+.generate-btn{
+
+    background:#4A3932;
+
+    color:#FFFFFF;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:16px 36px;
+
+    min-width:200px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+}
+
+.generate-btn:hover{
+
+    background:#6D544A;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(74,57,50,.20);
+
+}
+
+.generate-btn:active{
+
+    transform:scale(.98);
+
+}

@@ -1,0 +1,67 @@
+.json-form{
+
+    background:#FFFFFF;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    box-shadow:0 8px 24px rgba(0,0,0,0.06);
+
+}
+
+.json-form h2{
+
+    color:#3D2C27;
+
+    margin-bottom:10px;
+
+    font-size:24px;
+
+}
+
+.input-description{
+
+    color:#6F625C;
+
+    margin-bottom:18px;
+
+    font-size:15px;
+
+}
+
+.json-textarea{
+
+    width:100%;
+
+    min-height:300px;
+
+    resize:vertical;
+
+    padding:18px;
+
+    border:1px solid #D8CEC3;
+
+    border-radius:12px;
+
+    background:#FAF7F2;
+
+    font-size:15px;
+
+    font-family:Consolas, monospace;
+
+    color:#3D2C27;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.json-textarea:focus{
+
+    border-color:#A67C52;
+
+    box-shadow:0 0 0 3px rgba(166,124,82,0.15);
+
+}

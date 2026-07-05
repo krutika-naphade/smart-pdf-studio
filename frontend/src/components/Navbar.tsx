@@ -1,23 +1,39 @@
 import "./Navbar.css";
 
 import { FiSettings } from "react-icons/fi";
+import { Link, useNavigate } from "react-router-dom";
 
 function Navbar() {
+
+  const navigate = useNavigate();
+
+  const handleSettingsClick = () => {
+    navigate("/settings");
+  };
+
   return (
     <nav className="navbar">
+
       <h2 className="logo">
         Smart PDF Studio
       </h2>
 
       <div className="nav-links">
-        <a href="/generate">Generate PDF</a>
-        <a href="/history">History</a>
 
-        <button className="settings-btn">
+        <Link to="/generate">Generate PDF</Link>
+
+        <Link to="/history">History</Link>
+
+        <button
+          className="settings-btn"
+          onClick={handleSettingsClick}
+        >
           <FiSettings />
-          Settings
+          <span>Settings</span>
         </button>
+
       </div>
+
     </nav>
   );
 }

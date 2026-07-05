@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import GeneratePDF from "./pages/GeneratePDF";
 import Preview from "./pages/Preview";
 import History from "./pages/History";
+import Settings from "./pages/Settings";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/generate" element={<GeneratePDF />} />
       <Route path="/preview" element={<Preview />} />
       <Route path="/history" element={<History />} />
+      <Route path="/settings" element={<Settings />} />
     </Routes>
   );
 }

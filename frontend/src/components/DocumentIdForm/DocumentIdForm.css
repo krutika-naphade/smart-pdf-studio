@@ -1,0 +1,57 @@
+.document-form{
+
+    background:#FFFFFF;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.06);
+
+}
+
+.document-form h2{
+
+    color:#3D2C27;
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+}
+
+.document-description{
+
+    color:#6F625C;
+
+    margin-bottom:20px;
+
+}
+
+.document-input{
+
+    width:100%;
+
+    padding:16px;
+
+    border:1px solid #D8CEC3;
+
+    border-radius:12px;
+
+    background:#FAF7F2;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.document-input:focus{
+
+    border-color:#A67C52;
+
+    box-shadow:0 0 0 3px rgba(166,124,82,.15);
+
+}
