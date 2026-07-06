@@ -45,3 +45,18 @@
     transform:scale(.98);
 
 }
+.generate-btn:disabled{
+
+    opacity:.55;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+}
+
+.generate-btn:disabled:hover{
+
+    transform:none;
+
+}

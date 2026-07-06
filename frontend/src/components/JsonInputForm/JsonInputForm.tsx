@@ -1,9 +1,16 @@
 import "./JsonInputForm.css";
 
-function JsonInputForm() {
+type JsonInputFormProps = {
+  jsonData: string;
+  setJsonData: React.Dispatch<React.SetStateAction<string>>;
+};
+
+function JsonInputForm({
+  jsonData,
+  setJsonData,
+}: JsonInputFormProps) {
   return (
     <div className="json-form">
-
       <h2>JSON Data</h2>
 
       <p className="input-description">
@@ -12,13 +19,16 @@ function JsonInputForm() {
 
       <textarea
         className="json-textarea"
+        value={jsonData}
+        onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) =>
+          setJsonData(event.target.value)
+        }
         placeholder={`{
   "name": "John Doe",
   "email": "john@example.com",
   "department": "Engineering"
 }`}
-      ></textarea>
-
+      />
     </div>
   );
 }

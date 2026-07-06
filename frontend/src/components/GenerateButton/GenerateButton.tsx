@@ -1,14 +1,41 @@
 import "./GenerateButton.css";
 
-function GenerateButton() {
+type GenerateButtonProps = {
+  inputType: string;
+  jsonData: string;
+  documentId: string;
+};
+
+function GenerateButton({
+  inputType,
+  jsonData,
+  documentId,
+}: GenerateButtonProps) {
+
+  const isDisabled =
+    inputType === "json"
+      ? jsonData.trim() === ""
+      : documentId.trim() === "";
+
+  const handleGenerate = () => {
+    console.log("Generating PDF...");
+    console.log("Input Type:", inputType);
+
+    if (inputType === "json") {
+      console.log(jsonData);
+    } else {
+      console.log(documentId);
+    }
+  };
+
   return (
-    <div className="generate-button-container">
-
-      <button className="generate-btn">
-        Generate & Preview PDF
-      </button>
-
-    </div>
+    <button
+      className="generate-btn"
+      disabled={isDisabled}
+      onClick={handleGenerate}
+    >
+      Generate & Preview PDF
+    </button>
   );
 }
 
