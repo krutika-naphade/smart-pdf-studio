@@ -33,26 +33,6 @@ Smart PDF Studio is a full-stack PDF generation application that enables users t
 
 ---
 
-## 📸 Application Screenshots
-
-### Home Page
-
-> *(Add screenshot here)*
-
-### Generate PDF
-
-> *(Add screenshot here)*
-
-### Preview Page
-
-> *(Add screenshot here)*
-
-### Settings
-
-> *(Add screenshot here)*
-
----
-
 ## 🔄 Application Workflow
 
 
