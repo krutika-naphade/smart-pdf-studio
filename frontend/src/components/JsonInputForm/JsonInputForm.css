@@ -1,67 +1,68 @@
-.json-form{
+/* Action Buttons */
 
-    background:#FFFFFF;
+.json-actions{
 
-    border-radius:18px;
+    display:flex;
 
-    padding:28px;
-
-    box-shadow:0 8px 24px rgba(0,0,0,0.06);
-
-}
-
-.json-form h2{
-
-    color:#3D2C27;
-
-    margin-bottom:10px;
-
-    font-size:24px;
-
-}
-
-.input-description{
-
-    color:#6F625C;
+    gap:12px;
 
     margin-bottom:18px;
 
-    font-size:15px;
+}
+
+.sample-btn,
+.clear-btn{
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:all .25s ease;
 
 }
 
-.json-textarea{
+/* Fill Sample Data */
 
-    width:100%;
+.sample-btn{
 
-    min-height:300px;
+    background:#A67C52;
 
-    resize:vertical;
+    color:#FFFFFF;
 
-    padding:18px;
+}
 
-    border:1px solid #D8CEC3;
+.sample-btn:hover{
 
-    border-radius:12px;
+    background:#8F6842;
 
-    background:#FAF7F2;
+    transform:translateY(-2px);
 
-    font-size:15px;
+}
 
-    font-family:Consolas, monospace;
+/* Clear */
+
+.clear-btn{
+
+    background:#F3ECE4;
 
     color:#3D2C27;
 
-    outline:none;
-
-    transition:.3s;
+    border:1px solid #D8CEC3;
 
 }
 
-.json-textarea:focus{
+.clear-btn:hover{
 
-    border-color:#A67C52;
+    background:#E8DDD1;
 
-    box-shadow:0 0 0 3px rgba(166,124,82,0.15);
+    transform:translateY(-2px);
 
 }

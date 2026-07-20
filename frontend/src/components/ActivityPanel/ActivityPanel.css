@@ -1,79 +1,28 @@
-.activity-panel{
-
-    background:#FFFFFF;
-
-    border-radius:18px;
-
-    box-shadow:0 8px 24px rgba(0,0,0,.06);
-
-    overflow:hidden;
+.success{
+    color:#2E8B57;
 }
 
-.activity-header{
-
-    padding:22px 25px;
-
-    border-bottom:1px solid #EFE6DB;
-}
-
-.activity-header h2{
-
-    color:#3D2C27;
-
-    font-size:24px;
-}
-
-.activity-body{
-
-    padding:25px;
-
+.activity-item{
     display:flex;
-
-    flex-direction:column;
-
-    gap:20px;
-}
-
-.activity-item,
-.status-box{
-
-    display:flex;
-
     align-items:flex-start;
-
-    gap:15px;
-
-    padding:18px;
-
-    border-radius:12px;
-
-    background:#FAF7F2;
+    gap:16px;
+    margin-bottom:20px;
 }
 
-.activity-icon,
-.status-icon{
-
-    font-size:24px;
-
-    color:#A67C52;
-
-    margin-top:3px;
+.activity-icon{
+    font-size:22px;
+    color:#6D544A;
+    margin-top:4px;
 }
 
-.activity-item h4,
-.status-box h4{
-
-    color:#3D2C27;
-
-    margin-bottom:6px;
+.activity-item h4{
+    margin:0;
+    color:#3F2F2F;
+    font-size:16px;
 }
 
-.activity-item p,
-.status-box p{
-
-    color:#7A706A;
-
-    font-size:14px;
-
-    line-height:1.6;
+.activity-item p{
+    margin-top:6px;
+    color:#666;
+    line-height:1.5;
 }

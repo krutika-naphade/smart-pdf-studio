@@ -60,3 +60,14 @@
     transform:none;
 
 }
+.generate-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.generate-btn:disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
