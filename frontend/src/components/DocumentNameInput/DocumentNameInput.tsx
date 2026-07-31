@@ -14,13 +14,13 @@ function DocumentNameInput({
       <h2>Document Name</h2>
 
       <p className="document-name-description">
-        Enter the name for the generated PDF.
+        Enter a name for your PDF. This will be used as the downloaded file name.
       </p>
 
       <input
         type="text"
         className="document-name-input"
-        placeholder="e.g. Employee_Report"
+        placeholder="e.g. Employee_Report_July_2026"
         value={documentName}
         onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
           setDocumentName(event.target.value)

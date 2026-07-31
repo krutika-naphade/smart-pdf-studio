@@ -1,69 +1,42 @@
-.generate-button-container{
-
-    display:flex;
-
-    justify-content:flex-end;
-
+.generate-button-container {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.generate-btn{
+.generate-btn {
+    background: #4A3932;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 36px;
+    min-width: 220px;
+    min-height: 56px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
 
-    background:#4A3932;
-
-    color:#FFFFFF;
-
-    border:none;
-
-    border-radius:12px;
-
-    padding:16px 36px;
-
-    min-width:200px;
-
-    font-size:16px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:all .3s ease;
-
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.generate-btn:hover{
-
-    background:#6D544A;
-
-    transform:translateY(-2px);
-
-    box-shadow:0 10px 25px rgba(74,57,50,.20);
-
+.generate-btn:hover {
+    background: #6D544A;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(74, 57, 50, 0.20);
 }
 
-.generate-btn:active{
-
-    transform:scale(.98);
-
-}
-.generate-btn:disabled{
-
-    opacity:.55;
-
-    cursor:not-allowed;
-
-    transform:none;
-
+.generate-btn:active {
+    transform: scale(0.98);
 }
 
-.generate-btn:disabled:hover{
-
-    transform:none;
-
-}
 .generate-btn:disabled {
-    opacity: 0.6;
+    opacity: 0.75;
     cursor: not-allowed;
     transform: none;
+    box-shadow: none;
 }
 
 .generate-btn:disabled:hover {
@@ -71,3 +44,27 @@
     box-shadow: none;
 }
 
+.generate-btn.loading {
+    background: #5C483F;
+}
+
+/* Spinner */
+
+.spinner {
+    width: 18px;
+    height: 18px;
+    border: 3px solid rgba(255, 255, 255, 0.35);
+    border-top: 3px solid #FFFFFF;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    flex-shrink: 0;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -32,7 +32,6 @@ function GenerateButton({
     }
 
     const blob = await response.blob();
-
     const blobUrl = window.URL.createObjectURL(blob);
 
     const link = document.createElement("a");
@@ -87,11 +86,15 @@ function GenerateButton({
     } catch (error) {
       console.error(error);
 
-      alert(
-        error instanceof Error
-          ? error.message
-          : "Failed to generate PDF."
-      );
+      let message = "Failed to generate PDF.";
+
+      if (error instanceof SyntaxError) {
+        message = "Invalid JSON format. Please check your input.";
+      } else if (error instanceof Error) {
+        message = error.message;
+      }
+
+      alert(message);
     } finally {
       setIsGenerating(false);
     }
@@ -99,11 +102,18 @@ function GenerateButton({
 
   return (
     <button
-      className="generate-btn"
+      className={`generate-btn ${isGenerating ? "loading" : ""}`}
       disabled={isDisabled || isGenerating}
       onClick={handleGenerate}
     >
-      {isGenerating ? "Generating..." : "Generate & Preview PDF"}
+      {isGenerating ? (
+        <>
+          <span className="spinner"></span>
+          Generating PDF...
+        </>
+      ) : (
+        "Generate & Preview PDF"
+      )}
     </button>
   );
 }

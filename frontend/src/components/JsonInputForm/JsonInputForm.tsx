@@ -25,7 +25,8 @@ function JsonInputForm({
       <h2>JSON Data</h2>
 
       <p className="input-description">
-        Paste your JSON data below to generate a PDF document.
+        Enter or paste valid JSON data below. You can also use the sample data
+        to quickly test PDF generation.
       </p>
 
       <div className="json-actions">
@@ -52,7 +53,11 @@ function JsonInputForm({
         onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) =>
           setJsonData(event.target.value)
         }
-        placeholder="Paste your JSON here..."
+        placeholder={`{
+  "customerName": "John Doe",
+  "invoiceNumber": "INV-1001",
+  "amount": 2500
+}`}
       />
     </div>
   );
